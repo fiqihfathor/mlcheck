@@ -2,5 +2,16 @@
 name = "mlcheck"
 version = "0.1.0"
 edition = "2024"
+authors = ["Fiqih Fathor Rachim <fiqih.fathor.rachim@gmail.com>"]
+description = "Fast ML dataset validation CLI built in Rust - catch data issues before training"
+license = "MIT"
+repository = "https://github.com/fiqihfathor/mlcheck"
+keywords = ["machine-learning", "data-validation","cli","dataset","mlops"]
+categories = ["command-line-utilities","development-tools"]
 
 [dependencies]
+anyhow = "1.0.100"
+clap = { version = "4.5.50", features = ["derive"] }
+polars = { version = "0.51.0", features = ["lazy", "csv"] }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
